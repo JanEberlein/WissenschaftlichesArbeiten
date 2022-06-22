@@ -1,19 +1,26 @@
 \usepackage{standalone}
 \usepackage[utf8]{inputenc}
 \usepackage[ngerman]{babel}
-\usepackage{graphicx}
+\usepackage{graphicx} 
+\usepackage{wrapfig}
 \usepackage[a4paper, margin=1.5in]{geometry}
 \usepackage{csquotes}
+\usepackage{blindtext}
+\usepackage{acronym}
+\usepackage{longtable}
+\usepackage{hyperref}
 %\usepackage[center]{caption}
-%\usepackage{acronym}
 %\usepackage[toc,page]{appendix}
 %\usepackage{listings}
 %\usepackage{booktabs}
 %\usepackage{multirow}
-%\usepackage{wrapfig}
 %\usepackage[table,xcdraw]{xcolor}
 %\usepackage{todonotes}
 \usepackage{titlesec}
 \usepackage[style=numeric]{biblatex}
 
-\input{definitions.tex}
+\addbibresource{./references.bib}
+\graphicspath{{images/}{../images/}}
+
+% Titelseite
+\titleformat{\chapter}{\huge}{\textbf{\thechapter.}}{20pt}{\huge\textbf}

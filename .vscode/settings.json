@@ -51,5 +51,21 @@
             ]
         }
     ],
-    "latex-workshop.latex.outDir": "%DIR%/dist"
+    "latex-workshop.latex.outDir": "%DIR%/dist",
+    "cSpell.enableFiletypes": [
+        "tex"
+    ],
+    "cSpell.language": "en,de",
+    "cSpell.languageSettings": [
+    ],
+    "cSpell.dictionaries": [
+        "latex"
+    ],
+    "cSpell.files": [
+        "**/*"
+    ],
+    "cSpell.words": [
+        "assono",
+        "Informationstechnolgie"
+    ]
 }

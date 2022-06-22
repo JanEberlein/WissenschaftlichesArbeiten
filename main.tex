@@ -1,0 +1,75 @@
+\documentclass[12pt]{report}
+\usepackage{imports}
+
+\title{Praktikumsbericht}
+\author{Jan Eberlein}
+\date{April 2022}
+
+\begin{document}
+\pagenumbering{gobble}
+\begin{titlepage}
+	\centering
+	\includegraphics[width=1\textwidth]{images/FHKielLogo.png}\par\vspace{1cm}
+	\vspace{1.5cm}
+	{\huge\bfseries kreativer Titel der Thesis\par}
+	\vspace{2cm}
+	{\Large\itshape Jan Eberlein\par}
+	{\Large\itshape Matr. 931229\par}
+	{\Large\itshape im B.Sc. Informationstechnologie\par}
+	{\Large\itshape am Fachbereich Informatik und Elektrotechnik der Fachhochschule Kiel\par}
+	\vfill
+	{\Large\itshape bei Firma: eine gute IT-Firma\par}
+	{\Large\itshape Adresse der Firma: Planet Erde\par}
+	{\Large\itshape Erstprüfer*in: \par}
+	{\Large\itshape Zweitprüfer*in: \par}
+	\vfill
+	
+	{\Large\itshape abgegeben am: auf jeden Fall pünktlich\par}
+
+\end{titlepage}
+
+\pagenumbering{roman}
+
+\tableofcontents
+\newpage
+
+\section*{Abkürzungsverzeichnis}
+\input{acronyms.tex}
+\newpage
+
+\pagenumbering{arabic}
+
+\chapter{Abstract}
+\label{chapter:abstract}
+\input{chapters/00-Abstract.tex}
+
+\chapter{Einleitung}
+\input{chapters/01-Einleitung.tex}
+
+%
+\chapter{Hauptteil}
+\input{chapters/02-00-Hauptteil.tex}
+
+\section{Anforderungen}
+\input{chapters/02-01-Anforderungen.tex}
+
+\section{Implementation}
+\input{chapters/02-02-Implementation.tex}
+
+\section{Analyse von Ergebnissen und Feedback}
+\input{chapters/02-03-Analyse.tex}
+
+%
+\chapter{Schluss}
+\input{chapters/03-00-Schluss.tex}
+
+\section{Fazit}
+\input{chapters/03-01-Fazit.tex}
+
+\section{Ausblick}
+\input{chapters/03-02-Ausblick.tex}
+
+\printbibliography[heading=bibnumbered]
+\clearpage
+
+\end{document}
